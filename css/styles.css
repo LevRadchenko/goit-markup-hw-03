@@ -18,6 +18,19 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .address {
     font-style: normal;
     margin-left: auto;
@@ -50,6 +63,7 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2e2f42;
+    padding: 24px 0;
 
 }
 
@@ -80,10 +94,9 @@ a {
 }
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
@@ -96,12 +109,14 @@ a {
     display: flex;
     gap: 40px;
     margin-left: 76px;
+    padding: 24px 0;
 }
 
 .header-address {
     display: flex;
     gap: 40px;
     margin-left: auto;
+    padding: 24px 0;
 }
 
 /* main-banner */
@@ -166,21 +181,8 @@ a {
 }
 
 
-.features-title {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .features {
-    margin-block: 120px;
+    padding: 120px 0;
 }
 
 .features-list {
@@ -215,6 +217,8 @@ a {
 .team-item {
     background-color: #fff;
     width: calc((100% - 24px * 3) / 4);
+    border-radius: 0 0 4px 4px;
+    display: block;
 }
 
 .team-mini-title {
@@ -224,7 +228,6 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin-top: 32px;
     margin-bottom: 8px;
 }
 
@@ -235,13 +238,16 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
-    padding-bottom: 32px;
 }
 
 .team-list {
     display: flex;
     gap: 24px;
     align-items: center;
+}
+
+.team-person {
+    margin: 32px 16px;
 }
 
 /* main-portfolio */
@@ -293,12 +299,16 @@ a {
     /* width: calc((100% - 24px * 2) / 3); */
 }
 
+.portfolio-itam {
+    display: block;
+}
+
 
 /* footer */
 
 .footer {
     background-color: #2e2f42;
-    padding: 100px;
+    padding: 100px 0;
 }
 
 .footer-logo-web {
