@@ -299,9 +299,11 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
-    /* width: calc((100% - 24px * 2) / 3); */
 }
 
+.portfolio-itam {
+    width: calc((100% - 24px * 2) / 3);
+}
 
 
 /* footer */
